@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>babyTape</title>
+</head>
+<body>
+<!--we created form -->
+<!--@ denotes that path has been written relatively root of app -->
+<!--from sends post request to /form-->
+<form th:action="@{/form}" method="post" >
+    <span>Name</span>
+<!--    params: name and email of form-->
+    <input name="name"/>
+    </p>
+    <span>Email</span>
+    <input name="email"/>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
